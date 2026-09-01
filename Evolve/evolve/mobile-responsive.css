@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Evolve 1.4.10 Safe Mobile Layout Patch
+   1. 遵照指令：resources 的高度不能直接算一屏盛满，而是自适应高度 (height: auto)
+   2. 遵照指令：整个 mainColumn 板块在底部 (mainColumn order: 2)
+   3. .main .resources .resource div 设为 width: 60%
+   ========================================================================== */
+
+/* 1. 核心安全防护：严格保护 Vue v-show 隐藏的节点，防未解锁数据暴露 */
+[style*="display: none"],
+[style*="display:none"],
+[style*="display: none !important"],
+.is-hidden,
+.hidden {
+  display: none !important;
+}
+
+/* 2. 隐藏底部错位无用页脚栏 */
+.promoBar,
+footer,
+.footer,
+.external-links {
+  display: none !important;
+}
+
+/* 3. 资源行比例微调 (遵照指令：width 60%) */
+.main .resources .resource div {
+  width: 60% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+/* 4. 资源栏自适应高度覆盖：绝对不按一屏盛满 (100vh) 计算，而是根据内容自适应 */
+#resources,
+.resources,
+.main .leftColumn,
+.leftColumn,
+#res_col {
+  height: auto !important;
+  max-height: none !important;
+  min-height: auto !important;
+}
+
+/* 5. 移动端/小屏自适应 (<= 750px) */
+@media screen and (max-width: 750px) {
+
+  /* 5.1 全局视口与垂直滚动条 */
+  html {
+    overflow-y: auto !important;
+    height: auto !important;
+  }
+
+  body {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .main {
+    margin: 0.25rem !important;
+    overflow-y: visible !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  .main .leftColumn,
+  .main .content .tab-content,
+  .main .tab-content,
+  .main .content .tab-item,
+  .b-tabs .tab-content,
+  #resources,
+  .resources {
+    height: auto !important;
+    max-height: none !important;
+    min-height: auto !important;
+    overflow-y: visible !important;
+  }
+
+  /* 5.2 布局三栏流式 Stack */
+  .columns,
+  .columns.is-desktop,
+  .columns.is-gapless {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* 5.3 资源/状态/日志侧边栏 (.leftColumn) 排在上方 (order: 1)，自适应高度 */
+  .column.leftColumn,
+  .leftColumn,
+  #res_col {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    padding: 0.35rem 0.2rem !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+  }
+
+  /* 5.4 整个 mainColumn 板块放在底部 (order: 2) */
+  .column.is-three-quarters,
+  #main_col,
+  #main {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 1rem !important;
+    border-top: 1px dashed rgba(255, 255, 255, 0.2) !important;
+    padding: 0.5rem 0.2rem !important;
+    box-sizing: border-box !important;
+    height: auto !important;
+  }
+
+  /* 5.5 恢复按钮美观横向卡片形态 */
+  .button,
+  .button.b-btn,
+  [id*="-dist-"] .button {
+    white-space: nowrap !important;
+    word-break: normal !important;
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 80px !important;
+    min-height: 34px !important;
+    height: auto !important;
+    padding: 4px 10px !important;
+    font-size: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 4px 3px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 5.6 顶部选项卡 Tabs */
+  .b-tabs .tabs,
+  .tabs {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 0.5rem !important;
+    width: 100% !important;
+  }
+
+  .b-tabs .tabs::-webkit-scrollbar,
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .b-tabs .tabs ul,
+  .tabs ul {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: space-around !important;
+  }
+
+  .b-tabs .tabs li,
+  .tabs li {
+    flex: 1 !important;
+    text-align: center !important;
+  }
+
+  .b-tabs .tabs a,
+  .tabs a {
+    padding: 0.4rem 0.15rem !important;
+    font-size: 13px !important;
+  }
+
+  /* 5.7 弹窗与提示框尺寸适配 */
+  .modal-content {
+    max-width: 92vw !important;
+    margin: 0 auto !important;
+  }
+
+  .tooltip,
+  .b-tooltip .tooltip-content {
+    max-width: 80vw !important;
+    word-break: break-word !important;
+  }
+}

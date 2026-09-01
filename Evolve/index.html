@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    >
+
+    <title>Evolve</title>
+
+    <!--
+      Buefy 0.9.22，其中已经包含所需 Bulma CSS。
+    -->
+    <link
+        rel="stylesheet"
+        href="lib/buefy.min.0.9.22.css"
+    >
+
+    <!-- Weather Icons -->
+    <link
+        rel="stylesheet"
+        href="lib/weather-icons.min.css"
+    >
+
+    <!-- Evolve 原版游戏样式 -->
+    <link
+        rel="stylesheet"
+        href="evolve/evolve.css"
+    >
+
+    <!-- 安全版手机移动端响应式补丁 -->
+    <link
+        rel="stylesheet"
+        href="evolve/mobile-responsive.css"
+    >
+
+    <!-- 必须保证依赖顺序 -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/vue.min.js"></script>
+    <script src="lib/buefy.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="lib/Sortable.min.js"></script>
+    <script src="lib/chart.min.js"></script>
+    <script src="lib/lz-string.min.js"></script>
+
+    <!-- 游戏核心 -->
+    <script
+        src="evolve/main.js"
+        type="module"
+    ></script>
+</head>
+
+<body>
+    <style>
+        .loading {
+            text-align: center;
+            margin-top: 10rem;
+        }
+
+        .lds-dual-ring {
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+        }
+
+        .lds-dual-ring::after {
+            content: " ";
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            margin: 1px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <div class="loading">
+        <div class="lds-dual-ring"></div>
+    </div>
+</body>
+</html>
