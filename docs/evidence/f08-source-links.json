@@ -1,0 +1,197 @@
+{
+  "checkedAt": "2026-10-17T08:28:46.594Z",
+  "results": [
+    {
+      "url": "https://tinystool.org/tools/json/json-validator/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/json-validator/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/format/sql-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/format/sql-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/url-encode/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/url-encode/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/json/json-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/json-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/json/json-to-typescript/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/json-to-typescript/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/json/large-json-viewer/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/large-json-viewer/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/json/json-to-sql/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/json-to-sql/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/json/data-redactor/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/json/data-redactor/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/format/xml-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/format/xml-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/format/css-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/format/css-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/format/html-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/format/html-formatter/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/format/js-compress-format/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/format/js-compress-format/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/base64/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/base64/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/hash/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/hash/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/timestamp/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/timestamp/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/uuid/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/uuid/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/regex/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/regex/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/unicode/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/unicode/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/js-obfuscator/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/js-obfuscator/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/code-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/code-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/tools/dev/text-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://tinystool.org/zh/tools/dev/text-diff/",
+      "status": 200
+    },
+    {
+      "url": "https://qr.tinystool.org/zh",
+      "status": 200
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/generate",
+      "status": 200
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/beautify",
+      "status": 200
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/decode",
+      "status": 200
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/batch",
+      "status": 500
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/optimize",
+      "status": 500
+    }
+  ]
+}

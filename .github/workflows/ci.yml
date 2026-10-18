@@ -1,0 +1,29 @@
+name: Static portfolio checks
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: corepack enable && corepack prepare yarn@4.5.0 --activate
+      - run: yarn install --immutable
+      - run: yarn typecheck && yarn lint && yarn test
+      - run: yarn generate
+      - run: yarn playwright install --with-deps chromium
+      - name: Browser acceptance
+        env:
+          BROWSER_CHANNEL: chromium
+        run: |
+          yarn preview > /tmp/portfolio-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:4180/ > /dev/null; then break; fi
+            sleep 1
+          done
+          yarn test:browser

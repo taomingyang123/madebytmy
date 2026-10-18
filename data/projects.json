@@ -1,0 +1,468 @@
+[
+  {
+    "id": "tinys-tool",
+    "slug": "tinys-tool",
+    "name": "Tiny's Tool",
+    "category": "developer-tool",
+    "status": "published",
+    "featured": true,
+    "tagline": "Practical browser-based tools for developer data.",
+    "summary": "A collection of developer utilities for formatting, validating, comparing, and converting data, paired with task-focused explanations and technical guides.",
+    "highlights": [
+      "JSON validation and comparison",
+      "Data conversion and formatting",
+      "Large JSON inspection",
+      "Focused technical guides"
+    ],
+    "technologies": [],
+    "websiteUrl": "https://tinystool.org/",
+    "links": [
+      {
+        "label": "All Developer Tools",
+        "url": "https://tinystool.org/tools/",
+        "verified": true,
+        "zhUrl": "https://tinystool.org/zh/tools/"
+      },
+      {
+        "label": "Large JSON Viewer",
+        "url": "https://tinystool.org/tools/json/large-json-viewer/",
+        "verified": true,
+        "zhUrl": "https://tinystool.org/zh/tools/json/large-json-viewer/"
+      }
+    ],
+    "verificationNote": "Rechecked during development on 2026-10-17; generate also performs HTTP checks.",
+    "problem": "Working with developer data often means switching between a formatter, a validator and a comparison tool. The important part is knowing which tool fits the input—and where its limits are.",
+    "solution": "Tiny’s Tool brings these tasks into one browsable collection, with dedicated pages for individual utilities and guidance alongside them.",
+    "limitations": [
+      "Features and input limits vary by tool. Check the individual tool page before using it with large or sensitive data.",
+      "This overview does not claim that every tool runs entirely on your device. Consult the relevant tool’s guidance."
+    ],
+    "featureGroups": [
+      {
+        "title": "JSON & API debugging",
+        "items": [
+          {
+            "name": "JSON Validator",
+            "description": "Find syntax errors before debugging the API itself.",
+            "url": "https://tinystool.org/tools/json/json-validator/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/json-validator/",
+            "available": true
+          },
+          {
+            "name": "Semantic JSON Diff",
+            "description": "Compare data changes rather than object key order.",
+            "url": "https://tinystool.org/tools/json/json-diff/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/json-diff/",
+            "available": true
+          },
+          {
+            "name": "JSON to TypeScript",
+            "description": "Draft types from sample API responses.",
+            "url": "https://tinystool.org/tools/json/json-to-typescript/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/json-to-typescript/",
+            "available": true
+          },
+          {
+            "name": "Large JSON Viewer",
+            "description": "Inspect larger files within browser memory limits.",
+            "url": "https://tinystool.org/tools/json/large-json-viewer/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/large-json-viewer/",
+            "available": true
+          },
+          {
+            "name": "JSON to SQL",
+            "description": "Prepare INSERT statements for review before execution.",
+            "url": "https://tinystool.org/tools/json/json-to-sql/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/json-to-sql/",
+            "available": true
+          },
+          {
+            "name": "Data Redactor",
+            "description": "Prepare a shareable sample, then check for missed values.",
+            "url": "https://tinystool.org/tools/json/data-redactor/",
+            "zhUrl": "https://tinystool.org/zh/tools/json/data-redactor/",
+            "available": true
+          }
+        ]
+      },
+      {
+        "title": "Code formatting",
+        "items": [
+          {
+            "name": "SQL Formatter",
+            "description": "Make a query easier to read.",
+            "url": "https://tinystool.org/tools/format/sql-formatter/",
+            "zhUrl": "https://tinystool.org/zh/tools/format/sql-formatter/",
+            "available": true
+          },
+          {
+            "name": "XML Formatter",
+            "description": "Inspect the structure of an XML document.",
+            "url": "https://tinystool.org/tools/format/xml-formatter/",
+            "zhUrl": "https://tinystool.org/zh/tools/format/xml-formatter/",
+            "available": true
+          },
+          {
+            "name": "CSS Formatter & Minifier",
+            "description": "Switch between readable and compact stylesheets.",
+            "url": "https://tinystool.org/tools/format/css-formatter/",
+            "zhUrl": "https://tinystool.org/zh/tools/format/css-formatter/",
+            "available": true
+          },
+          {
+            "name": "HTML Formatter",
+            "description": "Review nested page markup.",
+            "url": "https://tinystool.org/tools/format/html-formatter/",
+            "zhUrl": "https://tinystool.org/zh/tools/format/html-formatter/",
+            "available": true
+          },
+          {
+            "name": "JavaScript Formatter & Minifier",
+            "description": "Format scripts for review or reduce their size.",
+            "url": "https://tinystool.org/tools/format/js-compress-format/",
+            "zhUrl": "https://tinystool.org/zh/tools/format/js-compress-format/",
+            "available": true
+          }
+        ]
+      },
+      {
+        "title": "Encoding, text & developer utilities",
+        "items": [
+          {
+            "name": "URL Encode / Decode",
+            "description": "Inspect encoded request parameters.",
+            "url": "https://tinystool.org/tools/dev/url-encode/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/url-encode/",
+            "available": true
+          },
+          {
+            "name": "Base64 Encode / Decode",
+            "description": "Convert text between plain and Base64 representations.",
+            "url": "https://tinystool.org/tools/dev/base64/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/base64/",
+            "available": true
+          },
+          {
+            "name": "Hash Calculator",
+            "description": "Calculate a digest for comparison.",
+            "url": "https://tinystool.org/tools/dev/hash/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/hash/",
+            "available": true
+          },
+          {
+            "name": "Timestamp Converter",
+            "description": "Read seconds or milliseconds as dates.",
+            "url": "https://tinystool.org/tools/dev/timestamp/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/timestamp/",
+            "available": true
+          },
+          {
+            "name": "UUID Generator",
+            "description": "Create identifiers for development samples.",
+            "url": "https://tinystool.org/tools/dev/uuid/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/uuid/",
+            "available": true
+          },
+          {
+            "name": "Regex Tester",
+            "description": "Check matches while refining an expression.",
+            "url": "https://tinystool.org/tools/dev/regex/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/regex/",
+            "available": true
+          },
+          {
+            "name": "Unicode Converter",
+            "description": "Read and create Unicode escape sequences.",
+            "url": "https://tinystool.org/tools/dev/unicode/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/unicode/",
+            "available": true
+          },
+          {
+            "name": "JavaScript Obfuscator",
+            "description": "Transform script readability; this is not encryption.",
+            "url": "https://tinystool.org/tools/dev/js-obfuscator/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/js-obfuscator/",
+            "available": true
+          },
+          {
+            "name": "Code Diff",
+            "description": "Review line changes between code snippets.",
+            "url": "https://tinystool.org/tools/dev/code-diff/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/code-diff/",
+            "available": true
+          },
+          {
+            "name": "Text Diff",
+            "description": "Find word and character changes in text.",
+            "url": "https://tinystool.org/tools/dev/text-diff/",
+            "zhUrl": "https://tinystool.org/zh/tools/dev/text-diff/",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "useCases": [
+      {
+        "title": "Debug an API response",
+        "description": "Validate the JSON first, compare it with an expected response, then infer types for the application. This separates malformed input from changes in the data contract."
+      },
+      {
+        "title": "Share a reproducible example",
+        "description": "Reduce the data to the relevant fields, redact sensitive values and review the output manually. A small, checked sample is easier for another developer to investigate."
+      },
+      {
+        "title": "Review a configuration change",
+        "description": "Format the source before comparing it. Use a code diff for line changes and a text diff when wording matters more than source structure."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is formatting the same as validation?",
+        "answer": "No. Formatting improves readability. Validation checks whether the input follows the expected syntax; neither confirms that the business data is correct."
+      },
+      {
+        "question": "Does JSON to SQL execute a database query?",
+        "answer": "No. It produces SQL text. Review the destination schema, value handling and generated statements before running anything in your own environment."
+      },
+      {
+        "question": "Can any size JSON file be opened?",
+        "answer": "No. Available browser memory and the structure of the data affect what can be processed. Use a smaller sample if the browser becomes unresponsive."
+      }
+    ],
+    "seoTitle": "Tiny's Tool — JSON, formatters & developer utilities",
+    "contentUpdated": "2026-10-18",
+    "websiteZhUrl": "https://tinystool.org/zh/"
+  },
+  {
+    "id": "qr-generator",
+    "slug": "qr-generator",
+    "name": "Tiny QR Toolkit",
+    "category": "utility",
+    "status": "published",
+    "featured": true,
+    "tagline": "A toolkit for creating and working with QR codes.",
+    "summary": "A web toolkit that brings QR code generation, visual customization, decoding and batch creation into one place.",
+    "highlights": [
+      "Generate QR codes for text, URLs and WiFi",
+      "Customize colors and visual styles",
+      "Decode QR codes from images or a camera",
+      "Create QR codes in batches"
+    ],
+    "technologies": [],
+    "websiteUrl": "https://qr.tinystool.org/",
+    "links": [],
+    "verificationNote": "User confirmed publication and URL on 2026-10-17. Landing page fetched successfully; feature summary reflects its public descriptions.",
+    "problem": "Sharing a link or WiFi details often calls for a QR code. Creating, styling and reading those codes can otherwise mean switching between separate tools.",
+    "solution": "Tiny QR Toolkit groups these QR code tasks into dedicated tools with a shared entry point.",
+    "limitations": [
+      "Available options depend on the selected tool. Test the generated code with your intended scanner before sharing it."
+    ],
+    "featureGroups": [
+      {
+        "title": "QR code workflow",
+        "items": [
+          {
+            "name": "QR Code Generator",
+            "description": "Create a code from text, a URL or WiFi details.",
+            "url": "https://qr.tinystool.org/generate",
+            "available": false,
+            "zhUrl": "https://qr.tinystool.org/zh/generate"
+          },
+          {
+            "name": "QR Beautifier",
+            "description": "Adjust colors and styles for a particular design.",
+            "url": "https://qr.tinystool.org/beautify",
+            "available": false,
+            "zhUrl": "https://qr.tinystool.org/zh/beautify"
+          },
+          {
+            "name": "QR Decoder",
+            "description": "Read the content encoded in an image.",
+            "url": "https://qr.tinystool.org/decode",
+            "available": true,
+            "zhUrl": "https://qr.tinystool.org/zh/decode"
+          },
+          {
+            "name": "Batch QR Creation",
+            "description": "Prepare multiple codes from a list of inputs.",
+            "url": "https://qr.tinystool.org/batch",
+            "available": false,
+            "zhUrl": "https://qr.tinystool.org/zh/batch"
+          },
+          {
+            "name": "QR Optimizer",
+            "description": "Review size and readability settings.",
+            "url": "https://qr.tinystool.org/optimize",
+            "available": false,
+            "zhUrl": "https://qr.tinystool.org/zh/optimize"
+          }
+        ]
+      }
+    ],
+    "availabilityNote": "The homepage describes five tool areas. Checks on October 17, 2026 found intermittent server errors on generation, beautification, batch creation and optimization pages. Direct links to those pages are paused here until access is stable. The decoder loads, but Chinese labels on the project website are incomplete.",
+    "useCases": [
+      {
+        "title": "Share a web address",
+        "description": "Choose a stable destination and check it before encoding. After generating a code, scan it on the devices your audience uses and confirm the destination."
+      },
+      {
+        "title": "Prepare a printed code",
+        "description": "Keep the surrounding blank space and sufficient contrast. Test the final printed size rather than relying only on a large screen preview."
+      },
+      {
+        "title": "Read an unfamiliar code",
+        "description": "Decode the image to inspect the destination before opening it. Reading the encoded text does not establish that the destination is trustworthy."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Can I change a static QR code after printing?",
+        "answer": "The encoded content is fixed in the image. If it contains a URL, the page at that URL may change, but changing the encoded address requires a new code."
+      },
+      {
+        "question": "Does a decorative design guarantee successful scanning?",
+        "answer": "No. Contrast, size, surrounding space and the scanner all matter. Test the final design in the conditions where it will be used."
+      },
+      {
+        "question": "Where do I use these tools?",
+        "answer": "This portfolio explains the project and provides links to its website. Tool inputs and results stay in the separate project; this page does not generate QR codes."
+      }
+    ],
+    "seoTitle": "Tiny QR Toolkit — QR generation, styling & decoding",
+    "contentUpdated": "2026-10-18",
+    "websiteZhUrl": "https://qr.tinystool.org/zh"
+  },
+  {
+    "id": "ip-checker",
+    "slug": "ip-checker",
+    "name": "IP Inspection Project",
+    "category": "developer-tool",
+    "status": "draft",
+    "featured": false,
+    "tagline": "Under consideration.",
+    "summary": "Independent IP quality checking project; deployment status not verified.",
+    "highlights": [],
+    "technologies": [],
+    "websiteUrl": "https://ip.tinystool.org/",
+    "links": [],
+    "verificationNote": "Planned project. Do not publish automatically."
+  },
+  {
+    "id": "image-compression",
+    "slug": "image-compression",
+    "name": "Tiny Image",
+    "category": "utility",
+    "status": "published",
+    "featured": true,
+    "tagline": "Compress and prepare images in your browser.",
+    "summary": "A local image-processing tool for JPEG, PNG and WebP inputs, with batch compression, resizing, before-and-after comparisons and ZIP downloads.",
+    "highlights": [
+      "Local image compression",
+      "PNG lossless optimization",
+      "Output format and quality",
+      "Proportional resizing",
+      "Batch queue and retries",
+      "Compare and download"
+    ],
+    "technologies": [
+      "Nuxt 3",
+      "Vue 3",
+      "TypeScript",
+      "Web Worker",
+      "WebAssembly"
+    ],
+    "links": [],
+    "verificationNote": "User authorized inclusion on 2026-10-17. Features inspected in local Tiny-Image source; configured website failed HTTPS connections twice. Publication here means portfolio visibility, not production acceptance.",
+    "websiteUrl": "https://image.tinystool.org/",
+    "websiteAvailable": false,
+    "contentUpdated": "2026-10-17",
+    "seoTitle": "Tiny Image — Local image compression & batch resizing",
+    "problem": "Preparing images for a website involves more than reducing file size: dimensions, transparency and visual quality also need attention. Repeating those checks one file at a time is slow.",
+    "solution": "Tiny Image combines browser-side compression with a batch queue, adjustable output settings, visual comparison and downloads. A Worker runs the processing pipeline and loads the required codecs on demand.",
+    "availabilityNote": "This overview is based on the project source. The configured website, image.tinystool.org, could not be reached over HTTPS during the October 17, 2026 check. Its visit button is temporarily hidden; live deployment has not been verified.",
+    "featureGroups": [
+      {
+        "title": "Image compression workflow",
+        "items": [
+          {
+            "name": "Local image compression",
+            "description": "JPEG, PNG and static WebP inputs are processed in the browser using Worker and WASM codecs.",
+            "available": true
+          },
+          {
+            "name": "PNG lossless optimization",
+            "description": "Keeping an original PNG without resizing uses OxiPNG. If optimization does not reduce its size, the original bytes are retained.",
+            "available": true
+          },
+          {
+            "name": "Output format and quality",
+            "description": "Keep the input format, or convert to JPEG or PNG. Explicit PNG conversion can use color quantization; converting a transparent image to JPEG uses a white background.",
+            "available": true
+          },
+          {
+            "name": "Proportional resizing",
+            "description": "Keep the original dimensions or set a maximum long edge, including 1920, 1280, 800 pixels and custom values. Smaller images are not enlarged.",
+            "available": true
+          },
+          {
+            "name": "Batch queue and retries",
+            "description": "Add files by selection, drag-and-drop or paste. Cancel tasks, retry failures, or recompress the batch after changing settings.",
+            "available": true
+          },
+          {
+            "name": "Compare and download",
+            "description": "Inspect a sliding before-and-after comparison, review file sizes, and download individual images or a ZIP archive.",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Supports static JPEG, PNG and WebP inputs. AVIF, HEIC, SVG and animated images are not supported in this version.",
+      "The current defaults allow 20 files per batch and 30 MiB per file, with pixel limits of 32 MP on desktop and 16 MP on mobile. ZIP downloads have a 100 MiB safety limit.",
+      "Savings depend on the source and settings. Lossy encoding, quantization and resizing can change image appearance; compare the result before using it."
+    ],
+    "useCases": [
+      {
+        "title": "Prepare website images",
+        "description": "Set dimensions for the intended display size, compress the batch and inspect important details before downloading."
+      },
+      {
+        "title": "Optimize transparent assets",
+        "description": "For a PNG that must retain its pixels, keep the original format and dimensions. Review shadows and translucent edges in the comparison view."
+      },
+      {
+        "title": "Deliver a batch of content images",
+        "description": "Use one set of output options across the queue, retry individual failures and package the finished images into a ZIP."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Are images sent to a compression server?",
+        "answer": "The inspected processing pipeline runs locally in the browser, using Worker and WASM codecs rather than a server compression API. This is a source-level finding, not a new production network audit."
+      },
+      {
+        "question": "Is every mode lossless?",
+        "answer": "No. Original PNG optimization without resizing has a lossless path. JPEG encoding, PNG quantization and resizing must not be described as preserving every original pixel."
+      },
+      {
+        "question": "Which languages are included?",
+        "answer": "The project includes Chinese, English and Japanese interfaces. This portfolio provides Chinese and English descriptions."
+      }
+    ]
+  },
+  {
+    "id": "ourtable",
+    "slug": "ourtable",
+    "name": "OurTable",
+    "category": "mini-program",
+    "status": "draft",
+    "featured": false,
+    "tagline": "Mini program referenced in the PDF; details unconfirmed.",
+    "summary": "Project ownership, publication and access path must be confirmed before public display.",
+    "highlights": [],
+    "technologies": [],
+    "links": [],
+    "verificationNote": "Source PDF only, no fabricated web URL."
+  }
+]

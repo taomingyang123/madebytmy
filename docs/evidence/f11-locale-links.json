@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://tinystool.org/zh/",
+    "status": 200,
+    "lang": "zh-CN",
+    "title": "JSON 格式化、校验与压缩在线工具 | Tiny's Tool",
+    "h1": "免费、快速的在线开发者工具"
+  },
+  {
+    "url": "https://tinystool.org/zh/tools/",
+    "status": 200,
+    "lang": "zh-CN",
+    "title": "全部在线开发者工具 | Tiny's Tool",
+    "h1": "在线开发者工具大全"
+  },
+  {
+    "url": "https://qr.tinystool.org/",
+    "status": 200,
+    "lang": "en",
+    "title": "seo.index.title - Tiny QR Toolkit",
+    "h1": "Tiny QR Toolkit"
+  },
+  {
+    "url": "https://qr.tinystool.org/decode",
+    "status": 200,
+    "lang": "en",
+    "title": "seo.decode.title - Tiny QR Toolkit",
+    "h1": "page.decode.tool.title"
+  }
+]

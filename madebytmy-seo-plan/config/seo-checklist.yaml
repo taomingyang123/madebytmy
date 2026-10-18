@@ -1,0 +1,41 @@
+version: 1
+site: https://madebytmy.com
+mode: ssg
+framework: nuxt4
+checks:
+  - id: seo-html
+    rule: "Every published HTML document includes nonempty unique title, description, one H1, self-referential HTTPS canonical"
+    severity: error
+  - id: published-only
+    rule: "Only published projects appear in generated pages, internal links, sitemap and JSON-LD"
+    severity: error
+  - id: route-verification
+    rule: "Each published project route is statically generated and directly accessible"
+    severity: error
+  - id: no-draft-output
+    rule: "Draft and archived project detail routes must not be generated"
+    severity: error
+  - id: link-validation
+    rule: "Public external URLs are valid HTTPS, user-verified and point to a real resource"
+    severity: error
+  - id: robots-sitemap
+    rule: "Valid robots.txt refers to production sitemap.xml; sitemap includes only canonical public URLs"
+    severity: error
+  - id: no-fake-data
+    rule: "No invented profile URL, contact, photo, review, rating, release date, metrics or project domain"
+    severity: error
+  - id: responsible-jsonld
+    rule: "Structured data matches visible content; no makesOffer-as-authorship or fabricated rich-result fields"
+    severity: error
+  - id: client-independent-content
+    rule: "Headline, main text, and meaningful navigation are in prerendered HTML"
+    severity: error
+  - id: 301-host
+    rule: "www/http normalize to https://madebytmy.com, and preview URLs are not indexed"
+    severity: error
+  - id: accessibility
+    rule: "Semantic headings, readable contrast, keyboard focus, reduced motion, responsive layouts"
+    severity: warning
+  - id: core-web-vitals
+    rule: "Record Lighthouse and real-world metrics; treat scores as targets, not search ranking guarantees"
+    severity: warning

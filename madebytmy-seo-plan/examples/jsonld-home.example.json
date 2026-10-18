@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://madebytmy.com/#person",
+      "name": "TMY",
+      "url": "https://madebytmy.com/",
+      "description": "Independent developer building practical web tools."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://madebytmy.com/#website",
+      "url": "https://madebytmy.com/",
+      "name": "Made by TMY",
+      "creator": { "@id": "https://madebytmy.com/#person" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://madebytmy.com/#webpage",
+      "url": "https://madebytmy.com/",
+      "name": "Made by TMY — Independent Developer & Projects",
+      "isPartOf": { "@id": "https://madebytmy.com/#website" },
+      "about": { "@id": "https://madebytmy.com/#person" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://madebytmy.com/#projects",
+      "name": "Published Projects",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Tiny's Tool",
+          "url": "https://madebytmy.com/projects/tinys-tool/"
+        }
+      ]
+    }
+  ]
+}

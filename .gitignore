@@ -1,0 +1,19 @@
+node_modules/
+.nuxt/
+.output/
+.yarn/
+app/data/published.json
+public/robots.txt
+public/sitemap.xml
+public/_headers
+public/og-default.png
+.env*
+.DS_Store
+
+# Archived project and unrelated workspace
+.backups/
+Evolve/
+universal-project-template/
+.template-import-*/
+dist
+*.log

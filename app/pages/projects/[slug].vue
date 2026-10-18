@@ -1,0 +1,27 @@
+<script setup lang="ts">
+import projects from '../../data/published.json'
+import { site } from '#shared/site'
+import type { Project } from '../../../types/project'
+const { t, localePath, externalUrl } = useSiteLanguage()
+const route = useRoute()
+const project = (projects as Project[]).find(p => p.slug === route.params.slug)
+if (!project) throw createError({ statusCode: 404, statusMessage: 'Project not found', fatal: true })
+const related = (projects as Project[]).filter(p => p.slug !== project.slug)
+const featureUrl = (item: NonNullable<Project['featureGroups']>[number]['items'][number]) => externalUrl(item.url, item.zhUrl)
+useSeo(project.seoTitle ?? project.name, project.summary, `/projects/${project.slug}/`, [
+  { '@type': 'WebPage', url: `${site.origin}/projects/${project.slug}/`, name: project.name, description: project.summary, dateModified: project.contentUpdated, about: { '@type': 'WebApplication', name: project.name, url: externalUrl(project.websiteUrl, project.websiteZhUrl), applicationCategory: project.category === 'utility' ? 'UtilitiesApplication' : 'DeveloperApplication', operatingSystem: 'Web browser', featureList: project.featureGroups?.flatMap(g => g.items.filter(i => i.available).map(i => i.name)) } },
+  { '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.origin + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Projects', item: site.origin + '/projects/' },
+    { '@type': 'ListItem', position: 3, name: project.name, item: `${site.origin}/projects/${project.slug}/` },
+  ] },
+])
+</script>
+<template>
+  <div v-if="project" class="shell"><section class="detail-intro"><nav class="breadcrumbs" :aria-label="t('Project directory')"><NuxtLink :to="localePath('/')">{{ t('Home') }}</NuxtLink><span aria-hidden="true">/</span><NuxtLink :to="localePath('/projects/')">{{ t('Projects') }}</NuxtLink><span aria-hidden="true">/</span><span>{{ project.name }}</span></nav><div class="eyebrow"><span class="small-dot" /> {{ t(project.websiteAvailable === false ? "Project overview" : "PUBLISHED PROJECT") }}</div><h1>{{ project.name }}</h1><p>{{ t(project.tagline) }}</p><a v-if="project.websiteAvailable !== false" class="button" :href="externalUrl(project.websiteUrl, project.websiteZhUrl)" target="_blank" rel="noopener noreferrer">{{ t("Visit project") }} <span aria-hidden="true">↗</span><span class="sr-only">{{ t(" (opens in a new tab)") }}</span></a><p v-else class="availability-note">{{ t("Website temporarily unavailable") }}</p></section><div class="detail-art"><ToolArtwork :qr="project.slug === 'qr-generator'" :image-tool="project.slug === 'image-compression'" /></div><div class="detail-grid"><aside><span class="eyebrow muted">{{ t("PROJECT OVERVIEW") }}</span><dl><dt>{{ t("Focus") }}</dt><dd>{{ t(project.slug === 'image-compression' ? 'Image tools' : project.category === 'utility' ? 'QR code tools' : 'Developer utilities') }}</dd><dt>{{ t("Available on") }}</dt><dd>{{ t(project.websiteAvailable === false ? "Website temporarily unavailable" : "The web") }}</dd></dl></aside><div class="prose"><section><h2>{{ t("About this project") }}</h2><p>{{ t(project.summary) }}</p></section><section><h2>{{ t("The problem") }}</h2><p>{{ t(project.problem ?? '') }}</p></section><section><h2>{{ t("The approach") }}</h2><p>{{ t(project.solution ?? '') }}</p><ul><li v-for="highlight in project.highlights" :key="highlight">{{ t(highlight) }}</li></ul></section><section aria-labelledby="features"><h2 id="features">{{ t('Feature directory') }}</h2><p v-if="project.availabilityNote" class="availability-note">{{ t(project.availabilityNote) }}</p><div v-for="group in project.featureGroups" :key="group.title" class="feature-group"><h3>{{ t(group.title) }}</h3><ul class="feature-items"><li v-for="item in group.items" :key="item.name"><a v-if="item.available && item.url" :href="featureUrl(item)" target="_blank" rel="noopener noreferrer">{{ t(item.name) }} ↗<span class="sr-only">{{ t(' (opens in a new tab)') }}</span></a><strong v-else>{{ t(item.name) }} <small v-if="!item.available">{{ t('Temporarily unavailable') }}</small></strong><p>{{ t(item.description) }}</p></li></ul></div></section>
+<section><h2>{{ t('Typical workflows') }}</h2><div v-for="scenario in project.useCases" :key="scenario.title"><h3>{{ t(scenario.title) }}</h3><p>{{ t(scenario.description) }}</p></div></section>
+<section><h2>{{ t('Frequently asked questions') }}</h2><div v-for="faq in project.faqs" :key="faq.question"><h3>{{ t(faq.question) }}</h3><p>{{ t(faq.answer) }}</p></div></section>
+<section v-for="other in related" :key="other.slug"><h2>{{ t('Related project') }}</h2><NuxtLink class="text-link" :to="localePath(`/projects/${other.slug}/`)">{{ other.name }} ↗</NuxtLink><p>{{ t(other.tagline) }}</p></section>
+<p v-if="project.contentUpdated">{{ t('Last reviewed') }}: <time :datetime="project.contentUpdated">{{ project.contentUpdated }}</time></p>
+<section><h2>{{ t("Scope & limitations") }}</h2><p v-for="limit in project.limitations" :key="limit">{{ t(limit) }}</p></section><section v-if="project.links?.length" class="project-deep-links"><h2>{{ t("Find the right starting point.") }}</h2><a v-for="link in project.links" :key="link.url" :href="externalUrl(link.url, link.zhUrl)" target="_blank" rel="noopener noreferrer">{{ t(link.label) }} <span aria-hidden="true">↗</span><span class="sr-only">{{ t(" (opens in a new tab)") }}</span></a></section></div></div></div>
+</template>

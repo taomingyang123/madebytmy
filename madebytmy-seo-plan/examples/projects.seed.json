@@ -1,0 +1,81 @@
+{
+  "$schemaNote": "Seed example, not a complete production dataset. Only project status=published is public. URLs and content must be verified at build time.",
+  "projects": [
+    {
+      "id": "tinys-tool",
+      "slug": "tinys-tool",
+      "name": "Tiny's Tool",
+      "category": "developer-tool",
+      "status": "published",
+      "featured": true,
+      "tagline": "Practical browser-based tools for developer data.",
+      "summary": "A collection of developer utilities for formatting, validating, comparing, and converting data, paired with task-focused explanations and technical guides.",
+      "highlights": ["JSON validation and comparison", "Data conversion and formatting", "Large JSON inspection", "Focused technical guides"],
+      "technologies": [],
+      "websiteUrl": "https://tinystool.org/",
+      "links": [
+        {"label": "All Developer Tools", "url": "https://tinystool.org/tools/", "verified": true},
+        {"label": "Large JSON Viewer (Chinese)", "url": "https://tinystool.org/zh/tools/json/large-json-viewer/", "verified": true}
+      ],
+      "verificationNote": "URLs observed in public webpage results on 2026-10-16; re-check during release."
+    },
+    {
+      "id": "qr-generator",
+      "slug": "qr-generator",
+      "name": "QR Code Generator",
+      "category": "utility",
+      "status": "draft",
+      "featured": false,
+      "tagline": "QR tooling — pending publication verification.",
+      "summary": "Mentioned in source PDF; actual availability and feature description must be checked before publishing.",
+      "highlights": [],
+      "technologies": [],
+      "websiteUrl": "https://qr.tinystool.org/",
+      "links": [],
+      "verificationNote": "Discussed in PDF; not independently verified during this review. Do not publish automatically."
+    },
+    {
+      "id": "ip-checker",
+      "slug": "ip-checker",
+      "name": "IP Inspection Project",
+      "category": "developer-tool",
+      "status": "draft",
+      "featured": false,
+      "tagline": "Under consideration.",
+      "summary": "Independent IP quality checking project; deployment status not verified.",
+      "highlights": [],
+      "technologies": [],
+      "websiteUrl": "https://ip.tinystool.org/",
+      "links": [],
+      "verificationNote": "Planned project. Do not publish automatically."
+    },
+    {
+      "id": "image-compression",
+      "slug": "image-compression",
+      "name": "Image Compression Project",
+      "category": "utility",
+      "status": "draft",
+      "featured": false,
+      "tagline": "Planned browser-side image compression utility.",
+      "summary": "Feature concept, domain and release not confirmed.",
+      "highlights": [],
+      "technologies": [],
+      "links": [],
+      "verificationNote": "No final domain confirmed; no URL is invented."
+    },
+    {
+      "id": "ourtable",
+      "slug": "ourtable",
+      "name": "OurTable",
+      "category": "mini-program",
+      "status": "draft",
+      "featured": false,
+      "tagline": "Mini program referenced in the PDF; details unconfirmed.",
+      "summary": "Project ownership, publication and access path must be confirmed before public display.",
+      "highlights": [],
+      "technologies": [],
+      "links": [],
+      "verificationNote": "Source PDF only, no fabricated web URL."
+    }
+  ]
+}
