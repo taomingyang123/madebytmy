@@ -39,7 +39,11 @@ export default {
     const missing = response.status === 404 || path === '/404.html' || path === '/zh/404.html'
     if (missing) {
       assetUrl.pathname = path === '/zh' || path.startsWith('/zh/') ? '/zh/404.html' : '/404.html'
-      response = await env.ASSETS.fetch(new Request(assetUrl, request))
+      // The error document is a replacement representation. Forwarding cache
+      // validators can produce a bodyless 304 which would become a blank 404.
+      const errorHeaders = new Headers(request.headers)
+      for (const header of ['If-Match', 'If-None-Match', 'If-Modified-Since', 'If-Unmodified-Since', 'If-Range', 'Range']) errorHeaders.delete(header)
+      response = await env.ASSETS.fetch(new Request(assetUrl, { method: 'GET', headers: errorHeaders }))
     }
     const headers = new Headers(response.headers)
     // Production workers.dev / preview hosts must not index the same content.

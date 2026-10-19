@@ -18,7 +18,8 @@
     "check:links": "tsx scripts/check-links.ts",
     "preview": "tsx scripts/preview.ts",
     "test:browser": "node tests/browser.mjs",
-    "test:workers": "tsx tests/workers-http.ts"
+    "test:workers": "tsx tests/workers-http.ts",
+    "check:links:browser": "tsx scripts/check-links-browser.ts"
   },
   "dependencies": {
     "nuxt": "4.6.1",

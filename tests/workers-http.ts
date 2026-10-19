@@ -38,6 +38,20 @@ for (const path of ['/%2Fexample.com/x/index.html', '/%5Cexample.com/x/index.htm
   assert.equal(response.status, 400, path)
   assert.equal(response.headers.get('location'), null)
 }
+// A cached error document must never turn into an empty 404 when ASSETS would
+// normally answer a conditional request with 304.
+for (const path of ['/missing/', '/zh/missing/', '/404.html', '/zh/404.html']) {
+  const initial = await get(path)
+  const body = await initial.text()
+  const etag = initial.headers.get('etag')
+  assert(etag, `${path}: real asset cache validator`)
+  for (const headers of [{ 'If-None-Match': etag }, { Range: 'bytes=0-30' }]) {
+    const response = await get(path, { headers })
+    assert.equal(response.status, 404)
+    assert.match(response.headers.get('x-robots-tag') ?? '', /noindex/)
+    assert.equal(await response.text(), body, `${path}: complete error body with ${JSON.stringify(headers)}`)
+  }
+}
 // Wrangler rewrites the origin in local mode. Supply additional local listeners
 // started with --host and --upstream-protocol https for domain-specific checks.
 if (process.env.WORKERS_WWW_URL) {

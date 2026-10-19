@@ -154,3 +154,7 @@ F03 本地交付已完成（2026-10-17）。新工程要求 Node 22.22.3 + Yarn 
 ## F12 Workers 部署修复
 
 用户提供的部署日志使用 Workers Builds，并要求修复。根目录 wrangler.jsonc 为该现有项目提供显式入口 workers/site.ts，build.command 执行完整 yarn generate；generate 显式指定 static preset，不部署 Nitro SSR。移除 Workers 不支持的绝对来源 _redirects 规则；Worker 处理 www、公开页面规范路径及双语 404，并为非生产主域名添加 noindex。生产 SITE_ENV=production 必须设在构建环境；Pages 替代方案需单独配置域名跳转。yarn typecheck 同时检查 Worker，yarn test:workers 验收本地 Wrangler 服务。修复范围为源码与本地验证，实际发布、DNS、域名验收仍属 F04；不自动提交或发布。
+
+## F14 外链可用性与二维码入口
+
+二维码 5 项功能的中英文链接已恢复，依据 2026-10-19 独立 Chrome 语言会话访问结果。不得将单次命令行异常直接等同于用户无法访问。check:links 使用 HTML 请求、明确语言、每 URL 隔离的临时 Cookie、最多三次尝试和目的地校验；失败仍阻止完整 generate，不自动隐藏项目。check:links:browser 可独立复核实际浏览器和客户端跳转；其结果不替代服务端健康或工具功能验收。外站服务端问题不在本仓库修复。

@@ -66,8 +66,8 @@ try {
   await page.getByRole('link', { name: 'Tiny QR Toolkit ↗', exact: true }).click()
   await page.waitForURL(origin + '/zh/projects/qr-generator/')
   assert.equal(await page.locator('.feature-items li').count(), 5)
-  assert.equal(await page.locator('.feature-items a').count(), 1)
-  assert.equal(await page.locator('.feature-items a').getAttribute('href'), 'https://qr.tinystool.org/zh/decode')
+  assert.equal(await page.locator('.feature-items a').count(), 5)
+  assert.deepEqual(await page.locator('.feature-items a').evaluateAll(links => links.map(link => link.getAttribute('href'))), ['generate', 'beautify', 'decode', 'batch', 'optimize'].map(slug => 'https://qr.tinystool.org/zh/' + slug))
   assert(await page.locator('.availability-note').isVisible())
   await page.getByRole('link', { name: 'Tiny Image ↗', exact: true }).click()
   await page.waitForURL(origin + '/zh/projects/image-compression/')
@@ -75,7 +75,7 @@ try {
   assert.equal(await page.locator('a[href="https://image.tinystool.org/"]').count(), 0)
   assert.match(await page.locator('.availability-note').last().textContent(), /HTTPS/)
   report.navigation.push('Tiny Image detail and six source-verified features; unreachable website has no visit link')
-  report.navigation.push('21 localized tool links, 5 QR features, unstable links disabled, related-project navigation')
+  report.navigation.push('21 localized tool links, 5 QR feature links restored with browser verification, related-project navigation')
   for (const prefix of ['', '/zh']) {
     await page.goto(origin + prefix + '/projects/', { waitUntil: 'networkidle' })
     for (const project of registry.filter(p => p.status === 'published' && p.websiteAvailable !== false)) {
@@ -88,7 +88,7 @@ try {
   report.navigation.push('English and Chinese project buttons and resource links use verified language counterparts')
   report.navigation.push('Bilingual switching across six page pairs, lang and canonical update')
   report.navigation.push('Keyboard skip link; home → projects → detail → about; client canonical updates')
-  for (const route of ['/does-not-exist/', '/projects/ip-checker/', '/projects/unknown/', '/zh/does-not-exist/', '/zh/projects/ip-checker/']) {
+  for (const route of ['/does-not-exist/', '/projects/ip-checker/', '/projects/unknown/', '/zh/does-not-exist/', '/zh/projects/ip-checker/', '/404.html', '/zh/404.html']) {
     const response = await page.goto(origin + route, { waitUntil: 'networkidle' })
     assert.equal(response.status(), 404)
     assert.equal(await page.locator('html').getAttribute('lang'), route.startsWith('/zh/') ? 'zh-Hans' : 'en')

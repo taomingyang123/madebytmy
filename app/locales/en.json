@@ -221,7 +221,6 @@
   "Project directory": "Project directory",
   "JSON, code and QR workflows": "JSON, code and QR workflows",
   "A project portfolio and guide to practical web tools.": "A project portfolio and guide to practical web tools.",
-  "The homepage describes five tool areas. Checks on October 17, 2026 found intermittent server errors on generation, beautification, batch creation and optimization pages. Direct links to those pages are paused here until access is stable. The decoder loads, but Chinese labels on the project website are incomplete.": "The homepage describes five tool areas. Checks on October 17, 2026 found intermittent server errors on generation, beautification, batch creation and optimization pages. Direct links to those pages are paused here until access is stable. The decoder loads, but Chinese labels on the project website are incomplete.",
   "Developer tools.": "Developer tools.",
   "Everyday utilities.": "Everyday utilities.",
   "Published web tools,": "Published web tools,",
@@ -272,5 +271,6 @@
   "Project overview": "Project overview",
   "Web tool projects,": "Web tool projects,",
   "Something went wrong | Independent Projects": "Something went wrong | Independent Projects",
-  "This page could not be loaded. Please try again or return to the homepage.": "This page could not be loaded. Please try again or return to the homepage."
+  "This page could not be loaded. Please try again or return to the homepage.": "This page could not be loaded. Please try again or return to the homepage.",
+  "Use the links below to open each QR tool. If a page fails to load, return to the toolkit homepage and try again. Some labels on the Chinese pages remain untranslated.": "Use the links below to open each QR tool. If a page fails to load, return to the toolkit homepage and try again. Some labels on the Chinese pages remain untranslated."
 }

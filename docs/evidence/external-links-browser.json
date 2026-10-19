@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-10-19T15:03:59.137Z",
+  "host": "qr.tinystool.org",
+  "results": [
+    {
+      "url": "https://qr.tinystool.org/",
+      "finalUrl": "https://qr.tinystool.org/",
+      "status": 200,
+      "title": "Tiny QR Toolkit - All-in-One QR Code Generator - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh",
+      "finalUrl": "https://qr.tinystool.org/zh",
+      "status": 200,
+      "title": "Tiny QR 工具箱 - 免费在线二维码生成器 - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/generate",
+      "finalUrl": "https://qr.tinystool.org/generate",
+      "status": 200,
+      "title": "QR Code Generator - Tiny QR Toolkit - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/generate",
+      "finalUrl": "https://qr.tinystool.org/zh/generate",
+      "status": 200,
+      "title": "二维码生成器 - Tiny QR 工具箱 - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/beautify",
+      "finalUrl": "https://qr.tinystool.org/beautify",
+      "status": 200,
+      "title": "Beautify QR Code - Free Custom QR Generator - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/beautify",
+      "finalUrl": "https://qr.tinystool.org/zh/beautify",
+      "status": 200,
+      "title": "二维码美化 - 免费在线设计工具 - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/decode",
+      "finalUrl": "https://qr.tinystool.org/decode",
+      "status": 200,
+      "title": "QR Code Decoder - Tiny QR Toolkit - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/decode",
+      "finalUrl": "https://qr.tinystool.org/zh/decode",
+      "status": 200,
+      "title": "二维码解码器 - Tiny QR 工具箱 - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/batch",
+      "finalUrl": "https://qr.tinystool.org/batch",
+      "status": 200,
+      "title": "Batch QR Code Generator - Tiny QR Toolkit - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/batch",
+      "finalUrl": "https://qr.tinystool.org/zh/batch",
+      "status": 200,
+      "title": "批量二维码生成器 - Tiny QR 工具箱 - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/optimize",
+      "finalUrl": "https://qr.tinystool.org/optimize",
+      "status": 200,
+      "title": "High-Res QR Code Generator - Tiny QR Toolkit - Tiny QR Toolkit",
+      "ok": true
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/optimize",
+      "finalUrl": "https://qr.tinystool.org/zh/optimize",
+      "status": 200,
+      "title": "高清二维码生成 - Tiny QR 工具箱 - Tiny QR Toolkit",
+      "ok": true
+    }
+  ]
+}

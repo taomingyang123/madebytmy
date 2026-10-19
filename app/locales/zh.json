@@ -221,7 +221,6 @@
   "Project directory": "项目目录",
   "JSON, code and QR workflows": "JSON、代码与二维码工作流",
   "A project portfolio and guide to practical web tools.": "实用网页工具的项目作品集与使用指南。",
-  "The homepage describes five tool areas. Checks on October 17, 2026 found intermittent server errors on generation, beautification, batch creation and optimization pages. Direct links to those pages are paused here until access is stable. The decoder loads, but Chinese labels on the project website are incomplete.": "官网介绍了五类工具。2026 年 10 月 17 日多次检查时，生成、美化、批量和优化页面间歇性返回服务器错误，直达链接暂缓展示，待访问稳定后恢复。解析页可加载，但项目官网的中文文案尚不完整。",
   "Developer tools.": "开发工具，",
   "Everyday utilities.": "日常工具。",
   "Published web tools,": "已发布的网页工具，",
@@ -272,5 +271,6 @@
   "Project overview": "项目介绍",
   "Web tool projects,": "网页工具项目，",
   "Something went wrong | Independent Projects": "页面暂时无法加载 | 独立开发者作品集",
-  "This page could not be loaded. Please try again or return to the homepage.": "这个页面暂时无法加载，请重试或返回首页。"
+  "This page could not be loaded. Please try again or return to the homepage.": "这个页面暂时无法加载，请重试或返回首页。",
+  "Use the links below to open each QR tool. If a page fails to load, return to the toolkit homepage and try again. Some labels on the Chinese pages remain untranslated.": "点击下方链接使用各项二维码工具。如遇页面加载异常，可返回工具箱首页重试。中文页面仍有少量未翻译标签。"
 }

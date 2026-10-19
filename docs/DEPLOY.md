@@ -20,7 +20,7 @@ The 2026-10-18 deployment log uses **Workers Builds** with `npx wrangler deploy`
 
 The old `public/_redirects` absolute-source rule caused API error 100324 in Workers and has been removed. `workers/site.ts` redirects `www.madebytmy.com` to the apex with path/query intact, implements the published pages' canonical trailing slash and index.html aliases, and serves English/Chinese 404 responses with noindex. Non-apex hosts (including workers.dev) receive noindex even with production assets. Preview builds also carry the global noindex header prepared during generation.
 
-After uploading these source changes to the connected repository, retry the failed deployment. Set SITE_ENV in the **build** environment, since robots and static headers are generated at build time. If the build reports an unavailable external project link, review docs/evidence/external-links.json and repair the link before retrying; do not bypass the gate. No account token belongs in the repository.
+After uploading these source changes to the connected repository, retry the failed deployment. Set SITE_ENV in the **build** environment, since robots and static headers are generated at build time. If the build reports an unavailable external project link, review docs/evidence/external-links.json and inspect all attempts and use `yarn check:links:browser --host=<hostname>` on a local machine with Chrome to distinguish browser access from HTTP failures. Verify the final destination, then repair the source URL or external service before retrying; do not bypass the gate or automatically hide a project. No account token belongs in the repository.
 
 Add madebytmy.com and, if needed, www.madebytmy.com to the existing Worker's custom domains, configure HTTPS, and verify the response checks below. The Worker redirect requires requests for www to reach this Worker. Preserve preview protections. No custom domain or DNS changes are made by the source configuration.
 
@@ -76,7 +76,7 @@ Record revision, environment, deployment URL, response headers, and browser evid
 
 ## Rollback
 
-Select the last known good deployment in the chosen Cloudflare service, or revert the offending commit and redeploy. Recheck robots, sitemap, canonical, response statuses and assets after rollback. Failed external-link checks are release blockers: repair/remove the deep link or move the affected project to draft; don't bypass verification silently. Keep source and lockfile with the release.
+Select the last known good deployment in the chosen Cloudflare service, or revert the offending commit and redeploy. Recheck robots, sitemap, canonical, response statuses and assets after rollback. Failed external-link checks are release blockers: review HTTP attempts and browser evidence before deciding whether to repair/remove a link; do not equate a single automated failure with site-wide unavailability or bypass verification silently. Keep source and lockfile with the release.
 
 ## After launch
 

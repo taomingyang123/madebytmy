@@ -69,3 +69,9 @@ English routes stay at `/`, `/projects/`, `/about/`, `/projects/tinys-tool/`. Si
 站点名称：Independent Projects / 独立开发者作品集。公开展示 Tiny’s Tool（https://tinystool.org/）、Tiny QR Toolkit（https://qr.tinystool.org/zh）和 Tiny Image（配置官网 https://image.tinystool.org/，当前不可达）。二维码项目详情位于 `/projects/qr-generator/` 与 `/zh/projects/qr-generator/`。
 
 Tiny Image 已加入作品集，详情：`/projects/image-compression/`、`/zh/projects/image-compression/`。支持基于源码确认的本地图片处理、批量、对比和下载介绍；官网暂未连接成功，访问按钮暂不展示。
+
+### 外链检查
+
+`yarn check:links` 检查公开入口的 HTML 响应与最终地址，使用明确的语言请求头、隔离的临时 Cookie 和最多三次尝试。200 跳回首页、换语言或换域名均不算通过；仅允许尾斜杠规范化。所有尝试写入 `docs/evidence/external-links.json`，不会自动修改项目可用状态。
+
+HTTP 检查失败时，用 `yarn check:links:browser --host=qr.tinystool.org` 在已安装 Chrome 的本机复核；不加 host 参数检查全部公开链接。浏览器按每个 URL 独立会话检查服务器和客户端跳转，结果写入 `docs/evidence/external-links-browser.json`。也可通过 BROWSER_CHANNEL 指定已安装的 Playwright 浏览器通道。浏览器复核不绕过构建的 HTTP 门禁，也不代表工具功能全部验收。

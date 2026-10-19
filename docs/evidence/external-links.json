@@ -1,305 +1,890 @@
 {
-  "checkedAt": "2026-10-18T13:13:07.410Z",
+  "checkedAt": "2026-10-19T15:04:39.421Z",
+  "mode": "HTML requests with explicit language; up to 3 attempts",
   "results": [
     {
       "url": "https://tinystool.org/",
       "status": 200,
       "finalUrl": "https://tinystool.org/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/large-json-viewer/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/large-json-viewer/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/large-json-viewer/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/large-json-viewer/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/large-json-viewer/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/large-json-viewer/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/json-validator/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/json-validator/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/json-validator/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/json-validator/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/json-validator/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/json-validator/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/json-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/json-diff/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/json-diff/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/json-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/json-diff/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/json-diff/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/json-to-typescript/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/json-to-typescript/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/json-to-typescript/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/json-to-typescript/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/json-to-typescript/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/json-to-typescript/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/json-to-sql/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/json-to-sql/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/json-to-sql/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/json-to-sql/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/json-to-sql/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/json-to-sql/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/json/data-redactor/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/json/data-redactor/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/json/data-redactor/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/json/data-redactor/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/json/data-redactor/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/json/data-redactor/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/format/sql-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/format/sql-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/format/sql-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/format/sql-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/format/sql-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/format/sql-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/format/xml-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/format/xml-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/format/xml-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/format/xml-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/format/xml-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/format/xml-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/format/css-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/format/css-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/format/css-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/format/css-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/format/css-formatter/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/format/css-formatter/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/format/html-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/format/html-formatter/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/format/html-formatter/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/format/html-formatter/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/format/html-formatter/",
-      "ok": true
+      "contentType": "text/html",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/format/html-formatter/",
+          "contentType": "text/html",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/format/js-compress-format/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/format/js-compress-format/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/format/js-compress-format/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/format/js-compress-format/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/format/js-compress-format/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/format/js-compress-format/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/url-encode/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/url-encode/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/url-encode/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/url-encode/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/url-encode/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/url-encode/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/base64/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/base64/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/base64/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/base64/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/base64/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/base64/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/hash/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/hash/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/hash/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/hash/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/hash/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/hash/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/timestamp/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/timestamp/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/timestamp/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/timestamp/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/timestamp/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/timestamp/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/uuid/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/uuid/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/uuid/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/uuid/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/uuid/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/uuid/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/regex/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/regex/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/regex/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/regex/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/regex/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/regex/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/unicode/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/unicode/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/unicode/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/unicode/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/unicode/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/unicode/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/js-obfuscator/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/js-obfuscator/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/js-obfuscator/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/js-obfuscator/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/js-obfuscator/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/js-obfuscator/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/code-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/code-diff/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/code-diff/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/code-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/code-diff/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/code-diff/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/tools/dev/text-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/tools/dev/text-diff/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/tools/dev/text-diff/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://tinystool.org/zh/tools/dev/text-diff/",
       "status": 200,
       "finalUrl": "https://tinystool.org/zh/tools/dev/text-diff/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://tinystool.org/zh/tools/dev/text-diff/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://qr.tinystool.org/",
       "status": 200,
       "finalUrl": "https://qr.tinystool.org/",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://qr.tinystool.org/zh",
       "status": 200,
       "finalUrl": "https://qr.tinystool.org/zh",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/generate",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/generate",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 500,
+          "finalUrl": "https://qr.tinystool.org/generate",
+          "contentType": "text/html;charset=utf-8",
+          "ok": false,
+          "error": "HTTP 500"
+        },
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/generate",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/generate",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/zh/generate",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh",
+          "contentType": "text/html;charset=utf-8",
+          "ok": false,
+          "error": "Unexpected destination: https://qr.tinystool.org/zh"
+        },
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh/generate",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/beautify",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/beautify",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/beautify",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/beautify",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/zh/beautify",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh/beautify",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://qr.tinystool.org/decode",
       "status": 200,
       "finalUrl": "https://qr.tinystool.org/decode",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/decode",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     },
     {
       "url": "https://qr.tinystool.org/zh/decode",
       "status": 200,
       "finalUrl": "https://qr.tinystool.org/zh/decode",
-      "ok": true
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh/decode",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/batch",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/batch",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/batch",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/batch",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/zh/batch",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh/batch",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/optimize",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/optimize",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/optimize",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "url": "https://qr.tinystool.org/zh/optimize",
+      "status": 200,
+      "finalUrl": "https://qr.tinystool.org/zh/optimize",
+      "contentType": "text/html;charset=utf-8",
+      "ok": true,
+      "attempts": [
+        {
+          "status": 200,
+          "finalUrl": "https://qr.tinystool.org/zh/optimize",
+          "contentType": "text/html;charset=utf-8",
+          "ok": true
+        }
+      ]
     }
   ]
 }

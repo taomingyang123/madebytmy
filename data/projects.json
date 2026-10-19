@@ -251,7 +251,7 @@
     "technologies": [],
     "websiteUrl": "https://qr.tinystool.org/",
     "links": [],
-    "verificationNote": "User confirmed publication and URL on 2026-10-17. Landing page fetched successfully; feature summary reflects its public descriptions.",
+    "verificationNote": "Reviewed on 2026-10-19 using Chrome and explicit language settings. Browser tool pages loaded; default curl can trigger server errors. HTTP and browser evidence are recorded separately.",
     "problem": "Sharing a link or WiFi details often calls for a QR code. Creating, styling and reading those codes can otherwise mean switching between separate tools.",
     "solution": "Tiny QR Toolkit groups these QR code tasks into dedicated tools with a shared entry point.",
     "limitations": [
@@ -265,14 +265,14 @@
             "name": "QR Code Generator",
             "description": "Create a code from text, a URL or WiFi details.",
             "url": "https://qr.tinystool.org/generate",
-            "available": false,
+            "available": true,
             "zhUrl": "https://qr.tinystool.org/zh/generate"
           },
           {
             "name": "QR Beautifier",
             "description": "Adjust colors and styles for a particular design.",
             "url": "https://qr.tinystool.org/beautify",
-            "available": false,
+            "available": true,
             "zhUrl": "https://qr.tinystool.org/zh/beautify"
           },
           {
@@ -286,20 +286,20 @@
             "name": "Batch QR Creation",
             "description": "Prepare multiple codes from a list of inputs.",
             "url": "https://qr.tinystool.org/batch",
-            "available": false,
+            "available": true,
             "zhUrl": "https://qr.tinystool.org/zh/batch"
           },
           {
             "name": "QR Optimizer",
             "description": "Review size and readability settings.",
             "url": "https://qr.tinystool.org/optimize",
-            "available": false,
+            "available": true,
             "zhUrl": "https://qr.tinystool.org/zh/optimize"
           }
         ]
       }
     ],
-    "availabilityNote": "The homepage describes five tool areas. Checks on October 17, 2026 found intermittent server errors on generation, beautification, batch creation and optimization pages. Direct links to those pages are paused here until access is stable. The decoder loads, but Chinese labels on the project website are incomplete.",
+    "availabilityNote": "Use the links below to open each QR tool. If a page fails to load, return to the toolkit homepage and try again. Some labels on the Chinese pages remain untranslated.",
     "useCases": [
       {
         "title": "Share a web address",
@@ -329,7 +329,7 @@
       }
     ],
     "seoTitle": "Tiny QR Toolkit — QR generation, styling & decoding",
-    "contentUpdated": "2026-10-18",
+    "contentUpdated": "2026-10-19",
     "websiteZhUrl": "https://qr.tinystool.org/zh"
   },
   {

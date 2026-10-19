@@ -24,7 +24,8 @@ createServer(async (req, res) => {
     const found = Boolean(info?.isFile()) && !path.split('/').some(part => part.startsWith('_') && part !== '_nuxt' && !part.endsWith('.json'))
     if (!found) file = resolve(root, path.startsWith('/zh/') ? 'zh/404.html' : '404.html')
     const data = await readFile(file)
-    res.writeHead(found ? 200 : 404, { 'Content-Type': mime[extname(file)] ?? 'application/octet-stream', 'X-Robots-Tag': 'noindex, nofollow' })
+    const errorDocument = path === '/404.html' || path === '/zh/404.html'
+    res.writeHead(found && !errorDocument ? 200 : 404, { 'Content-Type': mime[extname(file)] ?? 'application/octet-stream', 'X-Robots-Tag': 'noindex, nofollow' })
     res.end(req.method === 'HEAD' ? undefined : data)
   } catch { res.writeHead(400).end('Bad request') }
 }).listen(port, '127.0.0.1', () => console.log(`Local: http://127.0.0.1:${port}`))
