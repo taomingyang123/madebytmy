@@ -10,14 +10,15 @@
   "scripts": {
     "dev": "tsx scripts/prepare.ts && nuxt dev --host 127.0.0.1 --port 3002",
     "postinstall": "tsx scripts/prepare.ts && nuxt prepare",
-    "generate": "tsx scripts/check-links.ts && tsx scripts/prepare.ts && nuxt generate && tsx scripts/finalize.ts && tsx scripts/check-generated-html.ts",
-    "typecheck": "tsx scripts/prepare.ts && nuxt typecheck",
+    "generate": "tsx scripts/check-links.ts && tsx scripts/prepare.ts && nuxt generate --preset static && tsx scripts/finalize.ts && tsx scripts/check-generated-html.ts",
+    "typecheck": "tsx scripts/prepare.ts && nuxt typecheck && tsc -p tsconfig.workers.json",
     "lint": "eslint .",
     "test": "tsx --test tests/*.test.ts",
     "check:seo": "tsx scripts/check-generated-html.ts",
     "check:links": "tsx scripts/check-links.ts",
     "preview": "tsx scripts/preview.ts",
-    "test:browser": "node tests/browser.mjs"
+    "test:browser": "node tests/browser.mjs",
+    "test:workers": "tsx tests/workers-http.ts"
   },
   "dependencies": {
     "nuxt": "4.6.1",

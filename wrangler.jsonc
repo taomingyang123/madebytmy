@@ -1,0 +1,15 @@
+{
+  "name": "madebytmy",
+  "main": "workers/site.ts",
+  "compatibility_date": "2026-06-05",
+  "build": {
+    "command": "yarn generate"
+  },
+  "assets": {
+    "directory": ".output/public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}

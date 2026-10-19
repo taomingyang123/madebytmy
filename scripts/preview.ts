@@ -4,7 +4,7 @@ import { resolve, extname } from 'node:path'
 const root = resolve('.output/public')
 const port = Number(process.env.PORT ?? 4180)
 const mime: Record<string,string> = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.xml': 'application/xml', '.txt': 'text/plain', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2' }
-// Local static preview only; deployment uses Cloudflare Pages directly.
+// Local static preview only; use Wrangler for acceptance of Workers routing.
 createServer(async (req, res) => {
   try {
     const url = new URL(req.url ?? '/', 'http://localhost')

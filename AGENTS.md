@@ -150,3 +150,7 @@ F03 本地交付已完成（2026-10-17）。新工程要求 Node 22.22.3 + Yarn 
 ## F11 链接语言与预览边界
 
 公开项目的 websiteUrl / websiteZhUrl、资源与功能条目的 url / zhUrl 表达已核实的语言入口；使用 useSiteLanguage().externalUrl 选择，并同步验证结构化数据和访问按钮。注册表 published 表示作品集可见性，不代表官网上线验收。预览服务器只允许同源规范跳转，异常编码路径必须拒绝。
+
+## F12 Workers 部署修复
+
+用户提供的部署日志使用 Workers Builds，并要求修复。根目录 wrangler.jsonc 为该现有项目提供显式入口 workers/site.ts，build.command 执行完整 yarn generate；generate 显式指定 static preset，不部署 Nitro SSR。移除 Workers 不支持的绝对来源 _redirects 规则；Worker 处理 www、公开页面规范路径及双语 404，并为非生产主域名添加 noindex。生产 SITE_ENV=production 必须设在构建环境；Pages 替代方案需单独配置域名跳转。yarn typecheck 同时检查 Worker，yarn test:workers 验收本地 Wrangler 服务。修复范围为源码与本地验证，实际发布、DNS、域名验收仍属 F04；不自动提交或发布。

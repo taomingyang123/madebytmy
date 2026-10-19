@@ -1,6 +1,6 @@
 # Independent Projects / 独立开发者作品集
 
-Nuxt 4 portfolio at the project root, built as static HTML for Cloudflare Pages. Run all commands directly from this directory. The previous template is preserved in `.backups/20261017-root-migration/`. `madebytmy-seo-plan/` contains the original requirements; `Evolve/` is unrelated and ignored.
+Nuxt 4 portfolio at the project root, built as static HTML for Cloudflare Workers Static Assets or Pages. Run all commands directly from this directory. The previous template is preserved in `.backups/20261017-root-migration/`. `madebytmy-seo-plan/` contains the original requirements; `Evolve/` is unrelated and ignored.
 
 ## Local development
 
@@ -49,10 +49,12 @@ Site identity is in `shared/site.ts`. Missing biography, contacts, technology st
 
 - [Review and implementation plan](docs/REVIEW.md)
 - [Verification](docs/QA.md)
-- [Cloudflare Pages deployment and rollback](docs/DEPLOY.md)
+- [Cloudflare Workers / Pages deployment and rollback](docs/DEPLOY.md)
 - [Source tree](docs/FILE-TREE.txt)
 
 No commits, remote repository creation, deployment or search-engine submissions are performed by the development scripts.
+
+The existing Workers Builds project can keep `npx wrangler deploy`: the root `wrangler.jsonc` runs the full static `yarn generate` pipeline and deploys `.output/public` with a small redirect/404 handler. Set `SITE_ENV=production` in the production build environment; leave preview builds unset or preview. See the runbook for dashboard settings and local `yarn test:workers` acceptance.
 
 ## Root migration
 

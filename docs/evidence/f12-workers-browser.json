@@ -1,0 +1,376 @@
+{
+  "checkedAt": "2026-10-19T03:48:42.517Z",
+  "pages": [
+    {
+      "width": 320,
+      "route": "/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 320,
+      "route": "/zh/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 375,
+      "route": "/zh/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 768,
+      "route": "/zh/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/projects/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/about/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/projects/tinys-tool/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/projects/qr-generator/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    },
+    {
+      "width": 1280,
+      "route": "/zh/projects/image-compression/",
+      "overflow": false,
+      "violations": []
+    }
+  ],
+  "navigation": [
+    "Tiny Image detail and six source-verified features; unreachable website has no visit link",
+    "21 localized tool links, 5 QR features, unstable links disabled, related-project navigation",
+    "English and Chinese project buttons and resource links use verified language counterparts",
+    "Bilingual switching across six page pairs, lang and canonical update",
+    "Keyboard skip link; home → projects → detail → about; client canonical updates"
+  ],
+  "noJs": [
+    "/",
+    "/zh/",
+    "/projects/",
+    "/zh/projects/",
+    "/about/",
+    "/zh/about/",
+    "/projects/tinys-tool/",
+    "/zh/projects/tinys-tool/",
+    "/projects/qr-generator/",
+    "/zh/projects/qr-generator/",
+    "/projects/image-compression/",
+    "/zh/projects/image-compression/",
+    "Home → projects link works without JS"
+  ],
+  "http": [
+    {
+      "route": "/does-not-exist/",
+      "status": 404
+    },
+    {
+      "route": "/projects/ip-checker/",
+      "status": 404
+    },
+    {
+      "route": "/projects/unknown/",
+      "status": 404
+    },
+    {
+      "route": "/zh/does-not-exist/",
+      "status": 404
+    },
+    {
+      "route": "/zh/projects/ip-checker/",
+      "status": 404
+    },
+    {
+      "route": "/%2Fexample.com/x/index.html",
+      "status": 400
+    },
+    {
+      "route": "/%5Cexample.com/x/index.html",
+      "status": 400
+    },
+    {
+      "route": "/%2Fprojects/index.html",
+      "status": 400
+    },
+    {
+      "route": "/%0Aprojects/index.html",
+      "status": 400
+    },
+    {
+      "route": "/not-a-directory/index.html",
+      "status": 404
+    },
+    {
+      "route": "/zh/projects/index.html?source=check",
+      "status": 301
+    },
+    {
+      "route": "/projects",
+      "status": 301,
+      "location": "/projects/"
+    },
+    {
+      "route": "/about",
+      "status": 301,
+      "location": "/about/"
+    },
+    {
+      "route": "/projects/tinys-tool",
+      "status": 301,
+      "location": "/projects/tinys-tool/"
+    }
+  ]
+}

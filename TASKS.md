@@ -38,10 +38,10 @@
 
 #### F04 · 作品集线上预发布与域名验收
 
-- **行为**：后续取得发布任务授权后，将 F03 独立工程接入 GitHub/Cloudflare Pages，验证 Preview 后配置生产域名与索引策略。
-- **验证**：真实 Pages、DNS/HTTPS、www/http/pages.dev/尾斜杠重定向、404、响应头、sitemap/robots；生产 Lighthouse 与站长平台另记录。
+- **行为**：后续取得发布任务授权后，在现有 Cloudflare Workers 项目或 Pages 验证 Preview，再配置生产域名与索引策略。
+- **验证**：真实 Cloudflare 部署、DNS/HTTPS、www/http/平台域名/尾斜杠重定向、404、响应头、sitemap/robots；生产 Lighthouse 与站长平台另记录。
 - **状态**：todo
-- **进展**：仅准备部署清单；尚无远端仓库或部署，等待发布任务及账户信息。原模板 F02 不受影响。
+- **进展**：2026-10-19 用户提供的日志表明已有 Workers Builds 项目，2026-10-18 上传版本时因 _redirects 错误失败；F12 负责本地源码修复。成功发布、生产域名与账户配置仍未验证，待后续发布验收；原模板 F02 不受影响。
 - **证据**：[部署与回滚](docs/DEPLOY.md)、[所有者待办](docs/OWNER-TODO.md)。
 
 #### F05 · 将作品集迁入项目根目录并恢复访问
@@ -100,14 +100,22 @@
 - **进展**：2026-10-18修复双语外链错配、本地预览开放重定向/不存在索引301、非404元信息与目录文案；类型/lint/14测试、双环境12页SEO、50外链和48浏览器场景通过。外部官网异常仍记录，3002服务保留。
 - **证据**：[第二轮报告](docs/2026-10-18-global-audit.md)、[开发日志](memory/261018-21-全局复查.md)、docs/f11-*.log。
 
+#### F12 · 修复 Cloudflare Workers 部署失败
+
+- **行为**：按用户部署日志与修复要求，补齐 Workers 静态资源部署配置；保留 Nuxt SSG、双语与索引策略，修复不兼容的域名重定向及自动构建入口。
+- **验证**：类型/lint/测试、Preview/production 静态构建、Wrangler 离线打包与本地 Workers 运行；线上部署和域名验收仍由 F04 跟进。
+- **状态**：done
+- **进展**：2026-10-19 完成显式 Wrangler SSG 配置、规范路由 Worker 与双语 404/noindex；类型/lint/14测试、双环境12页SEO/真实本地HTTP、离线打包及48浏览器场景通过。未重复批量外链检查，实际部署保留完整 generate 门禁；3002开发服务保留。用户随后授权本地 Git 提交；不推送或发布，真实云端验收归 F04。
+- **证据**：[F12验收](docs/2026-10-19-workers-deploy-fix.md)、[开发日志](memory/261019-11-Workers部署修复.md)、[浏览器证据](docs/evidence/f12-workers-browser.json)、docs/f12-*.log。
+
 ## 完成进度
 
 - todo：2
 - doing：0
 - blocked：0
-- done：9
-- 总数：11
-- 已启动或受阻数 = doing + blocked + done：9
-- 收尾比例 = done / (doing + blocked + done)：100%（9 / 9）
+- done：10
+- 总数：12
+- 已启动或受阻数 = doing + blocked + done：10
+- 收尾比例 = done / (doing + blocked + done)：100%（10 / 10）
 
 > 比例仅反映已启动或受阻任务收尾情况，不等于整个模板完成率。

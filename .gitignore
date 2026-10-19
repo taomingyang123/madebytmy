@@ -1,6 +1,7 @@
 node_modules/
 .nuxt/
 .output/
+.wrangler/
 .yarn/
 app/data/published.json
 public/robots.txt

@@ -6,6 +6,6 @@ Optional facts to supply when ready: verified public GitHub profile, approved co
 
 Other projects remain draft. Confirm ownership, publication status, public access URL and permission before adding any to the public catalog. Website availability does not supply this permission.
 
-Release gates: create a separate repository from this directory; configure Pages Git integration; run Preview acceptance; configure Access/noindex; add custom domain, HTTPS and redirects; verify production responses; then set up Search Console/Bing and submit sitemap. These account and publishing actions have not been performed.
+Release gates: the supplied 2026-10-18 log shows an existing Workers Builds project whose upload failed. Upload the F12 source fix to its connected repository and retry with the Workers settings in DEPLOY.md; run Preview acceptance; configure Access/noindex; add custom domain, HTTPS and redirects; verify production responses; then set up Search Console/Bing and submit sitemap. Successful publication and account/domain settings remain unverified locally. Pages remains an alternative deployment target.
 
 Tiny Image: verify HTTPS access to image.tinystool.org before enabling its website button. Source features are documented, but production availability remains unverified.
